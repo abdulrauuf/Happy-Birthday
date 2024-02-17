@@ -35,6 +35,7 @@
 body {
   font-family: var(--body-font);
   background-color: var(--body-color);
+  font-size: 100vh;
 }
 
 img {
