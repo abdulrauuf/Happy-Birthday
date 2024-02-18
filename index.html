@@ -21,13 +21,15 @@
 
     <body>
 
-        <audio autoplay loop>
-            <source src="assets/Misc/audio.mp3" type="audio/mpeg">
-        </audio>
-
         <div class="gallery">
             <!-- =============== SWIPER GALLERY CARDS =============== -->
+              <!-- <audio autoplay loop>
+            <source src="assets/Misc/audio.mp3" type="audio/mpeg">
+        </audio> -->
+
+        <!-- <iframe style="display: none;" width="50" height="50" background-color="blue"  src="assets/Misc/audio.mp3?rel=0&autoplay" frameborder="0" allowfullscreen ></iframe> -->
             <div>
+
                 <h1>Happy Birthday <em>Babe</em> 🎂🎉</h1>
             </div>
 
@@ -176,6 +178,20 @@
                 </div>
             </div>
 
+                   <audio id="myAudio" loop>
+  <source src="assets/Misc/audio.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
+
+<button id="playButton" onclick="playAudio()" border: none;>Play Music</button>
+
+<script>
+function playAudio() {
+  var audio = document.getElementById("myAudio");
+  audio.play();
+}
+</script>
+
             <!-- =============== SWIPER GALLERY THUMBNAIL =============== -->
             <div class="gallery__overflow">
                 <div class="swiper gallery-thumbs">
@@ -280,6 +296,9 @@
                                                         and I can't wait to celebrate many more<br> 
                                                         birthdays with you ❤💜.</p>
             </div>
+
+
+
         </div>
         </div>
 
