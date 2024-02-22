@@ -277,9 +277,9 @@ h1::after{
 }
 
 .button{
-  padding: 5px 50px;
+  padding: 5px 10px;
   margin: 0 auto;
-  font-size: var(--h3-font-size);
+  font-size: 1rem;
   font-family: var(--body-font);
   color: hsla(0, 33%, 17%, 0.7);
   text-decoration: none;
