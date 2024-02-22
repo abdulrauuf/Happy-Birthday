@@ -10,7 +10,8 @@
   --black-color: hsl(0, 0%, 4%);
   --typewriterSpeed: 6s;
   /*========== Font and typography ==========*/
-  --body-font: 'montserrat', sans-serif;
+  --body-font:  "Protest Riot", sans-serif;
+  --second-font:  "Pacifico", cursive;
   --h3-font-size: 1rem;
   --small-font-size: .813rem;
   --smaller-font-size: .75rem;
@@ -99,6 +100,7 @@ img {
 }
 
 .gallery__title {
+  color: hsla(0, 25%, 95%, 0.7);
   font-size: var(--h3-font-size);
 }
 
@@ -214,8 +216,7 @@ h1{
    color: hsla(0, 33%, 17%, 0.7) ;
   font-size: 1.5rem;
   position: relative;
-  font-family: "Protest Riot", sans-serif;
-  /* outline: 2px solid var(--first-color-lighten); */
+  font-family: var(--second-font);
   position: relative;
   width: max-content;
 }
@@ -232,7 +233,7 @@ h1::after {
 
 h1::before{
   background: var(--first-color);
-  animation: typewriter var(--typewriterSpeed)  1s
+  animation: typewriter var(--typewriterSpeed)  2s
   forwards;
 }
 
@@ -247,7 +248,7 @@ h1::after{
 
 .subtitle{
   color: hsla(0, 33%, 17%, 0.7) ;
-  font-family: "Pacifico", cursive;
+  font-family: var(--second-font);
   font-size: 1.1rem;
   font-weight: 400;
   opacity: 0;
@@ -275,20 +276,25 @@ h1::after{
   }
 }
 
-#playButton{
-  padding: 5px 10px;
-  margin: 1px auto;
-  font-size: 1rem;
-  font-family: "Protest Riot", sans-serif;
-  background-color: var(--first-color);
-  color: hsla(0, 35%, 9%, 0.7);
-  border: none;
-  border-radius: 4px;
+.button{
+  padding: 5px 50px;
+  margin: 0 auto;
+  font-size: var(--h3-font-size);
+  font-family: var(--body-font);
+  color: hsla(0, 33%, 17%, 0.7);
+  text-decoration: none;
+  border: 2px solid var(--first-color-lighten);
+  background: var(--first-color-light);
+  border-style: inset outset;
+  border-radius: 30px 60px;
+  transition: all 0.2s ease;
   cursor: pointer;
-  transition: background-color .4s;
 }
-#playButton:hover{
-  background-color:  var(--first-color-light);
+.button:active{
+  transition: scale(0.96);
+}
+.button:hover{
+  background-color: var(--first-color);
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
