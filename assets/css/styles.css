@@ -213,11 +213,11 @@ img {
 .sub{display: inline-block;}
 
 h1{
+  padding-top: 1px;
    color: hsla(0, 33%, 17%, 0.7) ;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   position: relative;
   font-family: var(--second-font);
-  position: relative;
   width: max-content;
 }
 
